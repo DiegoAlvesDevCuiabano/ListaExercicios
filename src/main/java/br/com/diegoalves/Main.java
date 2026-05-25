@@ -5,23 +5,15 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         /*
-        Exercicio 4
-        Uma loja vende um produto por R$ 49.90 e o cliente comprou 3 unidades com 5%
-        de desconto.
-        Calcule o total usando BigDecimal (nao use double). Lembre:
-        sempre passe String no construtor.
+        Exercicio 5
+            Crie uma classe Veiculo com atributos marca e ano, construtor, e metodo
+            ligar() que imprime uma
+            mensagem. Depois crie Carro que herda de Veiculo e adiciona o
+            atributo numPortas. No construtor
+            do Carro, use super(). Crie um Carro no main e chame ligar().
         * */
 
-        BigDecimal produto = new BigDecimal("49.90");
-
-        BigDecimal desconto = produto.multiply(new BigDecimal("0.05"));
-
-        BigDecimal valorTotal = produto.multiply(new BigDecimal("3"));
-
-        BigDecimal descontoTotal = desconto.multiply(new BigDecimal("3"));
-
-        BigDecimal produtoTotal = valorTotal.subtract(descontoTotal);
-
-        System.out.println("Produto Total: " + produtoTotal);
+        Carro carro = new Carro("Carro A", "A");
+        carro.ligar();
     }
 }
