@@ -5,15 +5,26 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         /*
-        Exercicio 5
-            Crie uma classe Veiculo com atributos marca e ano, construtor, e metodo
-            ligar() que imprime uma
-            mensagem. Depois crie Carro que herda de Veiculo e adiciona o
-            atributo numPortas. No construtor
-            do Carro, use super(). Crie um Carro no main e chame ligar().
+        Exercicio 6
+            Crie Pessoa com nome e idade, e metodo apresentar() que imprime os dados.
+            Crie Aluno extends
+            Pessoa com atributo matricula, e Professor extends Pessoa com atributo
+            disciplina. Instancie um
+            Aluno e um Professor no main e chame apresentar() em ambos.
         * */
 
-        Carro carro = new Carro("Carro A", "A");
-        carro.ligar();
+        Aluno aluno = new Aluno();
+        aluno.setNome("Diego");
+        aluno.setIdade(18);
+        aluno.apresentar();
+
+        System.out.println("==================Digievolução==================");
+
+        Professor professor = new Professor();
+        professor.setNome("Diego");
+        professor.setIdade(29);
+        professor.apresentar();
+
+
     }
 }
